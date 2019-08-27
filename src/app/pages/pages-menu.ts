@@ -2,11 +2,141 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
+    title: 'Dashboard',
+    icon: 'home-outline',
     link: '/pages/dashboard',
     home: true,
   },
+  {
+    title: 'Product',
+    icon: 'layout-outline',
+    children: [
+      {
+        title: 'Add Product',
+        link: '/pages/products/add',
+      },
+      {
+        title: 'List Product',
+        link: '/pages/products',
+      },
+      {
+        title: 'Import Product',
+        link: '/pages/products/import',
+      },
+    ],
+  },
+  {
+    title: 'Sales',
+    icon: 'keypad-outline',
+    children: [
+      {
+        title: 'Add Sales',
+        link: '/pages/sales/add',
+      },
+      {
+        title: 'List Sales',
+        link: '/pages/sales',
+      },
+      {
+        title: 'Import Sales',
+        link: '/pages/sales/import',
+      },
+    ],
+  },
+  {
+    title: 'Purchase',
+    icon: 'edit-2-outline',
+    children: [
+      {
+        title: 'Add Purchase',
+        link: '/pages/purchase/add',
+      },
+      {
+        title: 'List Purchase',
+        link: '/pages/purchase',
+      },
+      {
+        title: 'Import Purchase',
+        link: '/pages/purchase/import',
+      },
+    ],
+  },
+  {
+    title: 'Transfer',
+    icon: 'message-circle-outline',
+    children: [
+      {
+        title: 'Add Transfer',
+        link: '/pages/transfer/add',
+      },
+      {
+        title: 'List Transfer',
+        link: '/pages/transfer',
+      },
+      {
+        title: 'Import Transfer',
+        link: '/pages/transfer/import',
+      },
+    ],
+  },
+  {
+    title: 'People',
+    icon: 'lock-outline',
+    children: [
+      {
+        title: 'Add People',
+        link: '/pages/people/add',
+      },
+      {
+        title: 'List People',
+        link: '/pages/people',
+      },
+      {
+        title: 'Import People',
+        link: '/pages/people/import',
+      },
+    ],
+  },
+  {
+    title: 'Settings',
+    icon: 'lock-outline',
+    children: [
+      {
+        title: 'System Settings',
+        link: '/pages/people/add',
+      },
+    ],
+  },
+  {
+    title: 'Reports',
+    icon: 'lock-outline',
+    children: [
+      {
+        title: 'Overview Chart',
+        link: '/pages/people/add',
+      },
+      {
+        title: 'Daily Sales',
+        link: '/pages/people',
+      },
+      {
+        title: 'Monthly Sales',
+        link: '/pages/people/import',
+      },
+      {
+        title: 'Payment Sales',
+        link: '/pages/people/import',
+      },
+      {
+        title: 'P/L Reports',
+        link: '/pages/people/import',
+      },
+      {
+        title: 'Staff Reports',
+        link: '/pages/people/import',
+      },
+    ],
+  }/*,
   {
     title: 'IoT Dashboard',
     icon: 'home-outline',
@@ -243,5 +373,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/auth/reset-password',
       },
     ],
-  },
+  }*/,
 ];

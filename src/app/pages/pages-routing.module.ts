@@ -64,6 +64,31 @@ const routes: Routes = [{
         .then(m => m.TablesModule),
     },
     {
+      path: 'products',
+      loadChildren: () => import('./products/products.module')
+        .then(m => m.ProductsModule),
+    },
+    {
+      path: 'purchase',
+      loadChildren: () => import('./purchase/purchase.module')
+        .then(m => m.PurchaseModule),
+    },
+    {
+      path: 'sales',
+      loadChildren: () => import('./sales/sales.module')
+        .then(m => m.SalesModule),
+    },
+    {
+      path: 'transfer',
+      loadChildren: () => import('./transfer/transfer.module')
+        .then(m => m.TransferModule),
+    },
+    {
+      path: 'people',
+      loadChildren: () => import('./people/people.module')
+        .then(m => m.PeopleModule),
+    },
+    {
       path: 'miscellaneous',
       loadChildren: () => import('./miscellaneous/miscellaneous.module')
         .then(m => m.MiscellaneousModule),
